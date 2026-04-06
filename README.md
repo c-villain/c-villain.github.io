@@ -25,5 +25,5 @@
 
 - [🧷 SSL пиннинг](https://c-villain.github.io/General/ssl_pinning_rus)
 
--[OpenAPI JSON Validation: Finding Broken API Responses](https://c-villain.github.io/General/api_validator_en)
+- [OpenAPI JSON Validation: Finding Broken API Responses](https://c-villain.github.io/General/api_validator_en)
     - [Валидация JSON через OpenAPI: как находить сломанные API-ответы](https://c-villain.github.io/General/api_validator_rus)
