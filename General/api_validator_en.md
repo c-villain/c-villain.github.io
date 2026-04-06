@@ -1,11 +1,14 @@
-# OpenAPI JSON Validation: Finding Broken API Responses
+# OpenAPI JSON Validation: Finding Broken API Responses via apivalidator.ru
 
 Agree, it would be convenient to have a simple tool that allows you to:
-— upload a Swagger spec
-— paste a real API response
+- upload a Swagger spec
+- paste a real API response
+
 and immediately understand:
-— whether it’s valid
-— and if not — why
+
+- whether it’s valid
+- and if not — why
+
 Here it is — [apivalidator.ru](https://apivalidator.ru).
 
 A simple service that helps you quickly check whether a real API response matches its specification and shows exactly where the problem is.
