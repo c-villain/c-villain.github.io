@@ -1,4 +1,4 @@
-# OpenAPI JSON Validation: Finding Broken API Responses
+# OpenAPI JSON Validation: Finding Broken API Responses via [apivalidator.ru](https://apivalidator.ru)
 
 Agree, it would be convenient to have a simple tool that allows you to:
 - upload a Swagger spec
