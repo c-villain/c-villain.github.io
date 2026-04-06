@@ -23,24 +23,26 @@ And that’s when an issue surfaced that had previously gone unnoticed.
 Due to the lack of strict typing, the same data could come in different formats.
 For example, a numeric field could arrive either as a number or as a string ("12345").
 Booleans were even more interesting. The same flag could come in multiple forms:
-— "true" / "false"
-— "1" / "0"
-— 1 / 0
-— true / false
+
+- "true" / "false"
+- "1" / "0"
+- 1 / 0
+- true / false
 
 In the old networking layer, this “worked”: values were simply coerced into the expected type until something fit.
 
 The problem is that errors weren’t fixed — they were silently masked.
 But with the new networking layer:
-— objects failed to deserialize
-— decoding broke
-— in some cases, the entire JSON response failed
-— client applications simply stopped working
+- objects failed to deserialize
+- decoding broke
+- in some cases, the entire JSON response failed
+- client applications simply stopped working
 
 Over time, we started cleaning up the backend:
-— fixing types
-— removing inconsistencies
-— aligning on API contracts
+
+- fixing types
+- removing inconsistencies
+- aligning on API contracts
 
 However, one unpleasant issue remained.
 Imagine an API returns an array of 100 objects:
@@ -54,14 +56,14 @@ At that point, the user doesn’t care which object is broken — they just leav
 From a development perspective, things aren’t much better.
 
 You don’t know:
-— which object is invalid
-— where the type mismatch happened
-— what exactly went wrong
+- which object is invalid
+- where the type mismatch happened
+- what exactly went wrong
 And QA, of course, files an urgent bug on the frontend
 (because “nothing works”).
 
 At some point it became clear that we were missing a simple tool that would allow us to:
-— take an API specification
-— take a real server response
-— and quickly validate them against each other
+- take an API specification
+- take a real server response
+- and quickly validate them against each other
 With a clear answer: where exactly the problem is and why it happens.
